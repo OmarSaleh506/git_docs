@@ -20,9 +20,9 @@ git fetch --all [<options>]
 ### DESCRIPTION 
 Fetch branches and/or tags (collectively, "refs") from one or more other repositories, along with the objects necessary to complete their histories. Remote-tracking branches are updated.
 
-By default, any tag that points into the histories being fetched is also fetched; the effect is to fetch tags that point at branches that you are interested in. This default behavior can be changed by using the --tags or --no-tags options or by configuring remote.<name>.tagOpt. By using a refspec that fetches tags explicitly, you can fetch tags that do not point into branches you are interested in as well.
+By default, any tag that points into the histories being fetched is also fetched; the effect is to fetch tags that point at branches that you are interested in. This default behavior can be changed by using the --tags or --no-tags options or by configuring remote.```<name>```.tagOpt. By using a refspec that fetches tags explicitly, you can fetch tags that do not point into branches you are interested in as well.
 
-git fetch can fetch from either a single named repository or URL, or from several repositories at once if <group> is given and there is a remotes.<group> entry in the configuration file. 
+git fetch can fetch from either a single named repository or URL, or from several repositories at once if ```<group>``` is given and there is a remotes.```<group>``` entry in the configuration file. 
 
 When no remote is specified, by default the origin remote will be used, unless there’s an upstream branch configured for the current branch.
 
@@ -44,7 +44,7 @@ More precisely, git pull runs git fetch with the given parameters and then depen
 
 repository should be the name of a remote repository as passed to git-fetch. refspec can name an arbitrary remote ref (for example, the name of a tag) or even a collection of refs with corresponding remote-tracking branches (e.g., refs/heads/*:refs/remotes/origin/*), but usually it is the name of a branch in the remote repository.
 
-Default values for <repository> and <branch> are read from the "remote" and "merge" configuration for the current branch as set by ```git-branch --track.```
+Default values for ```<repository>``` and ```<branch>``` are read from the "remote" and "merge" configuration for the current branch as set by ```git-branch --track.```
 
 ##### Name
 git-push - Update remote refs along with associated objects
