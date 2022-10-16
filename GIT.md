@@ -5,6 +5,6 @@
 -Fast Forward Merge
 -3-way merge
 
-![Image](https://www.w3docs.com/uploads/media/default/0001/03/4f3db14561c7045ff3375e3d8087d6b3b981a359.png)
+![Image](https://www.delftstack.com/img/Git/fastforward%20merge.jpg?ezimgfmt=rs:372x331/rscb5/ngcb5/notWebP)
 
 ![Image](https://www.w3docs.com/uploads/media/default/0001/03/e0f0e9e14db945c07e1fc0f3b2460ac19e0f738f.png)
