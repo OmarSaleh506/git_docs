@@ -178,13 +178,23 @@ Manage the set of repositories ("remotes") whose branches you track.
 ![Image](https://www.delftstack.com/img/Git/fastforward%20merge.jpg?ezimgfmt=rs:372x331/rscb5/ngcb5/notWebP)
 
 ## 3-way merge:
-#### is where two changesets to one base file are merged as they are applied, as opposed to applying one, then merging the result with the other.
+##### is where two changesets to one base file are merged as they are applied, as opposed to applying one, then merging the result with the other.
 
 ![Image](https://www.w3docs.com/uploads/media/default/0001/03/e0f0e9e14db945c07e1fc0f3b2460ac19e0f738f.png)
 
+##Merge conflicts
+It’s always nice when merges happened seamlessly, but on occasion, you could run into merge conflicts.
+Merge conflicts happen when both branches you’re trying to merge change some part of the same file. Sometimes, Git is able to figure things out here.
+However, Git often isn’t able to decide which version it should use if multiple people made changes to the same line in a file, so it gives up right before creating the merge commit. That way, you can solve the problem.
+
+##Solving merge conflicts:
+First, you need to understand what caused the merge conflict. Did someone delete a file you made changes to? Or maybe you added a file with the same name as an existing file.
+Regardless, Git will inform you that you have “unmerged paths,” meaning conflicts stopped your branches from merging.
+Fortunately, Git uses visual markers (<<<<<<<, =======, and >>>>>>>) to help you find the problem area easily.
+![Image](https://salferrarello.com/wp-content/uploads/2021/02/vscode-merge-conflict-ui.png)
 ## command git marge:
 ```
-$ git checkout master
-$ git merge Feature
-$ $ git branch -d Feature
+$ git checkout master //تحويل الى برانش الماستر
+$ git merge Feature  // دمج الماستر مع فيتشر
+$ $ git branch -d Feature // حذف برانش فيتشر
 ```
