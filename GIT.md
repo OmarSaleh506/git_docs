@@ -1,34 +1,43 @@
-#GIT
-
-#Branch: A branch in Git is simply a lightweight movable pointer to one of these commits. The default branch name in Git is master.
+#GIT Documentation
 
 
-## The“master” branch in Git is not a special branch. It is exactly like any other branch. The only reason nearly every repository has one is that the git init command creates it by default and most people don’t bother to change it.
+## Introduction 
+*  Welcome, I'll explain what **git** is in the beginning before getting into the specifics. You must first be familiar with how **git** functions and the on what does it depend it has. Git operates on a version control system (VCS), which keeps track of changes made to a file or group of files over time so that you can refer to specific versions in the future. You really need this system if you're a **designer** or **developer** because it simply enables you to roll back your files or even projects to their previous iterations, allowing you to compare changes and determine who made them.
 
 
-# How To Creating a New Branch??
+##Branch
+* A branch in Git is simply a lightweight movable pointer to one of these commits. The default branch name in Git is master.
+
+
+* The **master** branch in Git is not a special branch. It is exactly like any other branch. The only reason nearly every repository has one is that the git init command creates it by default and most people don’t bother to change it.
+
+
+## How To Creating a New Branch?
 ```
-    -$ git branch waledBranch
+    -$ git branch 'Branch_name'
  ``` 
     
-###It keeps a special pointer called HEAD.
+* It keeps a special pointer called HEAD.
 
-## The git branch command only created a new branch — it didn’t switch to that branch. Next UP to see How Switch the branch ..
+* The git branch command only created a new branch — it didn’t switch to that branch. Next UP to see How Switch the branch ..
 
 
 ```
-   -$ git checkout waledBranch
+   -$ git checkout 'Branch_name'
 ```
 
 
-## the HEAD now poin at the waledBranch.
+*  the HEAD now poin at the 'Branch_name'
 
 
-#HEAD pointing to a branch
-You can easily see this by running a simple git log command that shows you where the branch pointers are pointing. This option is called --decorate.
+* HEAD now pointing to a branch
+* You can easily see this by running a simple git log command that shows you where the branch pointers are pointing. This option is called --decorate.
+
 ```
     -$ git log --oneline --decorate
 ```
+
+
 
 
 
