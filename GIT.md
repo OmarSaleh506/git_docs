@@ -1,9 +1,43 @@
 # GIT Documentation
 
-
 ## Introduction 
 *  Welcome, I'll explain what **git** is in the beginning before getting into the specifics. You must first be familiar with how **git** functions and the on what does it depend it has. Git operates on a version control system (VCS), which keeps track of changes made to a file or group of files over time so that you can refer to specific versions in the future. You really need this system if you're a **designer** or **developer** because it simply enables you to roll back your files or even projects to their previous iterations, allowing you to compare changes and determine who made them.
 
+#### Installing on macOS 
+
+ There are several ways to install Git on a Mac. The easiest is probably to install the Xcode Command Line Tools. On Mavericks (10.9) or above you can do this simply by trying to run git from the Terminal the very first time.
+
+    ```$ git --version```
+
+If you don’t have it installed already, it will prompt you to install it.
+If you want a more up to date version, you can also install it via a binary installer. A macOS Git installer is maintained and available for download at the Git website, at [download on mac](https://git-scm.com/download/mac.)
+
+## Getting a Git Repository
+
+##### You typically obtain a Git repository in one of two ways:
+1. You can take a local directory that is currently not under version control, and turn it into a Git repository, or
+2. You can clone an existing Git repository from elsewhere.
+
+* In either case, you end up with a Git repository on your local machine, ready for work.
+
+##### Initializing a Repository in an Existing Directory
+* If you have a project directory that is currently not under version control and you want to start controlling it with Git, you first need to go to that project’s directory. If you’ve never done this, it looks a little different depending on which system you’re running:
+
+```$ cd /Users/user/my_project```
+
+#### and type:
+
+```$ git init```
+
+* This creates a new subdirectory named .git that contains all of your necessary repository files — a Git repository skeleton. At this point, nothing in your project is tracked yet. See Git Internals for more information about exactly what files are contained in the .git directory you just created.
+
+* If you want to start version-controlling existing files (as opposed to an empty directory), you should probably begin tracking those files and do an initial commit. You can accomplish that with a few git add commands that specify the files you want to track, followed by a git commit:
+```
+$ git add *.c
+$ git add LICENSE
+$ git commit -m 'Initial project version'
+```
+* We’ll go over what these commands do in just a minute. At this point, you have a Git repository with tracked files and an initial commit.
 
 ## Sharing and Updating Projects
 
