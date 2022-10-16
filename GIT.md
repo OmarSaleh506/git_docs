@@ -1,11 +1,11 @@
-#GIT Documentation
+# GIT Documentation
 
 
 ## Introduction 
 *  Welcome, I'll explain what **git** is in the beginning before getting into the specifics. You must first be familiar with how **git** functions and the on what does it depend it has. Git operates on a version control system (VCS), which keeps track of changes made to a file or group of files over time so that you can refer to specific versions in the future. You really need this system if you're a **designer** or **developer** because it simply enables you to roll back your files or even projects to their previous iterations, allowing you to compare changes and determine who made them.
 
 
-##Branch
+## Branch
 * A branch in Git is simply a lightweight movable pointer to one of these commits. The default branch name in Git is master.
 
 
@@ -37,14 +37,16 @@
     -$ git log --oneline --decorate
 ```
 
-##Merge
+## Merge
 * is Git's way of putting a forked history back together again. The git merge command lets you take the independent lines of development created by git branch and integrate them into a single branch
+
+
+## Merge types
+
+* Fast Forward Merge
 
 ![Image](https://www.delftstack.com/img/Git/fastforward%20merge.jpg?ezimgfmt=rs:372x331/rscb5/ngcb5/notWebP)
 
-![Image](https://www.w3docs.com/uploads/media/default/0001/03/e0f0e9e14db945c07e1fc0f3b2460ac19e0f738f.png)
-
-##Merge types
-
-* Fast Forward Merge
 * 3-way merge
+
+![Image](https://www.w3docs.com/uploads/media/default/0001/03/e0f0e9e14db945c07e1fc0f3b2460ac19e0f738f.png)
