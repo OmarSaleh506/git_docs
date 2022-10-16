@@ -182,12 +182,12 @@ Manage the set of repositories ("remotes") whose branches you track.
 
 ![Image](https://www.w3docs.com/uploads/media/default/0001/03/e0f0e9e14db945c07e1fc0f3b2460ac19e0f738f.png)
 
-##Merge conflicts
+## Merge conflicts
 It’s always nice when merges happened seamlessly, but on occasion, you could run into merge conflicts.
 Merge conflicts happen when both branches you’re trying to merge change some part of the same file. Sometimes, Git is able to figure things out here.
 However, Git often isn’t able to decide which version it should use if multiple people made changes to the same line in a file, so it gives up right before creating the merge commit. That way, you can solve the problem.
 
-##Solving merge conflicts:
+## Solving merge conflicts:
 First, you need to understand what caused the merge conflict. Did someone delete a file you made changes to? Or maybe you added a file with the same name as an existing file.
 Regardless, Git will inform you that you have “unmerged paths,” meaning conflicts stopped your branches from merging.
 Fortunately, Git uses visual markers (<<<<<<<, =======, and >>>>>>>) to help you find the problem area easily.
